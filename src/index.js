@@ -3,10 +3,10 @@ const bodyParser= require("body-parser")
 const route= require("../src/route/route")
 const mongoose= require("mongoose")
 const app= express();
-
+const cors = require('cors');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
+app.use(cors());
 mongoose.connect("mongodb+srv://Uranium-Batch:aruSjkdGdfhc9MRK@functionup.eel5r.mongodb.net/group16Database", {
     useNewUrlParser: true
 })
