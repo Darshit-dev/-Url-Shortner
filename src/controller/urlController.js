@@ -40,7 +40,7 @@ const createUrl = async (req, res) => {
       return res.status(400).send({ status: false, message: "Invalid parameter : 'Please enter Url'" });
     }
 
-    let baseUrl = "http://localhost:3000";
+    let baseUrl = "https://url-shortner-web-app.herokuapp.com";
 
     // longUrl validation
 
